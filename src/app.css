@@ -1,0 +1,27 @@
+  .btn-container ul li{
+    list-style: none;
+    text-align: center;
+    margin: 0;
+  }
+  .btn-container ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 20px;
+    width: 30%;
+    background-color: black;
+    border: 2px solid white;
+    margin: 0 5px;
+    border-radius: 50%;
+  }
+  body, ul{
+    margin: 0;
+    padding: 0;
+  }
+  .main-container{
+    max-width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+  }
