@@ -4,7 +4,8 @@
       <calcInput
       v-bind:result="result"
     />
-      <calcButton class='btn' v-for = '(item, index) in buttonValue'
+    <div class="buttons-section-container">
+      <calcButton  v-for = '(item, index) in buttonValue'
     v-bind:key = 'item'
     v-bind:index = 'index'
     v-bind:item = 'item'
@@ -12,6 +13,7 @@
     v-bind:result = "result"
     v-on:pushToInput="pushToInput"
     />
+  </div>
       <resBtn
       v-bind:result="result"
       v-on:calcEvent="calcEvent"
@@ -37,12 +39,15 @@ export default {
   },
   methods: {
     pushToInput(item) {
-      this.result += item;
+      if (item === 'C') {
+        this.result = '';
+      }
+      else this.result += item;
     },
 
     selectNums(res) {
       let num = '';
-      for (var i = 0; i < res.length; i++) {
+      for (let i = 0; i < res.length; i++) {
         if (!isNaN(Number(res[i]))) {
           num += res[i];
         }
@@ -59,7 +64,7 @@ export default {
 
     calculate() {
       this.calcRes = this.nums[0];
-      for (var i = 0; i < this.nums.length - 1; i++) {
+      for (let i = 0; i < this.nums.length - 1; i++) {
          switch(this.operators[i]) {
            case '+' : 
             this.calcRes += Number(this.nums[i + 1]);

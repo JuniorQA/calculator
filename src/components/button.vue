@@ -1,6 +1,6 @@
 <template>
 	<div class="btn-container">
-		<ul><li><a href="#" class="btn" v-on:click="$emit('pushToInput', item)">{{buttonValue[index]}}</a></li></ul>
+		<a href="#" class="btn" v-on:click="$emit('pushToInput', item)">{{buttonValue[index]}}</a>
 	</div>
 </template>
 

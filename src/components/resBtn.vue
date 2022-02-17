@@ -1,6 +1,6 @@
 <template>
 	<div class="resbtn-container">
-		<input type="button" value="Calculate" v-on:click="$emit('calcEvent', result)">
+		<div><input type="button" value="Calculate" v-on:click="$emit('calcEvent', result)"></div>
 	</div>
 </template>
 

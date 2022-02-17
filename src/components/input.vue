@@ -1,6 +1,6 @@
 <template>
 	<div class="input-container">
-		<input type="text" v-model="result">
+		<input type="text" class="calc-input" v-model="result">
 	</div>
 </template>
 
