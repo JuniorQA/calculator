@@ -1,0 +1,104 @@
+  .buttons-section-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+  }
+
+  .btn-container {
+      list-style: none;
+      text-align: center;
+      width: 33%;
+  }
+
+  .btn-container a {
+      text-decoration: none;
+      color: white;
+      display: block;
+      padding: 20px;
+      width: 30%;
+      background-color: black;
+      border: 2px solid white;
+      margin: 0 5px;
+  }
+
+  body {
+      margin: 0;
+      padding: 0;
+  }
+
+  .main-container {
+      max-width: 250px;
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+      flex-direction: column;
+  }
+
+  .btn {
+      text-decoration: none;
+      display: inline-block;
+      padding: 15px 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 40px 40px #F137A6 inset, 0 0 0 0 #F137A6;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      letter-spacing: 2px;
+      color: white;
+      transition: .15s ease-in-out;
+  }
+
+  .btn:hover {
+      box-shadow: 0 0 10px 0 #F137A6 inset, 0 0 10px 4px #F137A6;
+      color: #F137A6;
+  }
+
+  .calc-input{
+    margin: 10px;
+    border: 3px solid #cccccc;
+   border-radius: 3px; 
+   -webkit-border-radius: 3px; 
+   -moz-border-radius: 3px; 
+   -khtml-border-radius: 3px;
+   background: #ffffff !important; 
+   outline: none; 
+   height: 24px; 
+   width: 120px; 
+   color: #000; 
+   font-size: 20px;
+   font-family: Tahoma;
+  }
+
+  .input-container{
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .calc-btn{
+  transition: 0.5s all;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  }
+
+  .calc-btn:hover {
+    transition: 0.5s all;
+    background-color: #3e8e41;
+  }
+
+  .calc-btn:active {
+  transition: 0.5s all;
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
